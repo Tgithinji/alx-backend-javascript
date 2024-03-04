@@ -1,3 +1,3 @@
-# 0x00. ES6 Basics
+# ALX Backend JavaScript
 
-This folder contains solutions to tasks from ALX backend specialization
+This folder contains solutions to tasks from ALX backend specialization javaScript part
