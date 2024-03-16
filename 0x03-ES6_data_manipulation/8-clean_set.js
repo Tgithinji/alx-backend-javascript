@@ -11,12 +11,11 @@ export default function cleanSet(set, startString) {
       // extract the  word after the startsWith
       const extractedString = word.slice(startString.length);
       // append the extracted word to a string
-      text += `${extractedString}-`;
+      if (text !== '') text += '-';
+
+      text += extractedString;
     }
   }
-
-  // remove trailing '-' if text is not empty
-  if (text.length > 0) text = text.slice(0, -1);
 
   return text;
 }
