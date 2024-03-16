@@ -15,8 +15,8 @@ export default function cleanSet(set, startString) {
     }
   }
 
-  // remove trailing '-'
-  text = text.slice(0, -1);
+  // remove trailing '-' if text is not empty
+  if (text.length > 0) text = text.slice(0, -1);
 
   return text;
 }
