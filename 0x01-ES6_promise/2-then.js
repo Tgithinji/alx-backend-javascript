@@ -1,5 +1,5 @@
 export default function handleResponseFromAPI(promise) {
-  obj = {
+  const obj = {
     status: 200,
     body: 'success',
   }
