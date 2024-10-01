@@ -1,4 +1,4 @@
-.eslint.js
+.eslintrc.js
 babel.config.js
 database.csv
 package.json
