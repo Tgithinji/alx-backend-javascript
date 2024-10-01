@@ -5,4 +5,5 @@ package.json
 .vscode
 node_modules
 *-main.js
+*-main_*.js
 package-lock.json
