@@ -53,7 +53,7 @@ const app = http.createServer((req, res) => {
       });
   } else {
     res.writeHead(404);
-    res.end('Not foundx');
+    res.end('Not found');
   }
 });
 
