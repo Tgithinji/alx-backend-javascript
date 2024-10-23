@@ -62,12 +62,14 @@ const app = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
 
   if (req.url === '/') {
+    res.statusCode = 200;
     res.end('Hello Holberton School!');
   } else if (req.url === '/students') {
     // Get the path to the CSV file from the command line argument
     const databasePath = process.argv[2];
 
     if (!databasePath) {
+      res.statusCode = 500;
       res.end('Cannot load the database');
       return;
     }
