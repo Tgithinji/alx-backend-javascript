@@ -1,4 +1,4 @@
-const { expect } = require('chai');
+const expect = require('chai').expect;
 const calculateNumber = require('./2-calcul_chai');
 
 describe('calculateNumber', function () {
@@ -7,11 +7,11 @@ describe('calculateNumber', function () {
   });
 
   it('should subtract two numbers', function () {
-    expect(calculateNumber('SUBTRACT', 1.4, 4.5)).to.equal(-3);
+    expect(calculateNumber('SUBTRACT', 1.4, 4.5)).to.equal(-4);
   });
 
   it('should divide two numbers', function () {
-    expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.31);
+    expect(calculateNumber('DIVIDE', 1.4, 4.5)).to.equal(0.2);
   });
 
   it('should return Error when dividing by zero', function () {
