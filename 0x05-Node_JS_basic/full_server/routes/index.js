@@ -1,4 +1,3 @@
-// full_server/routes/index.js
 import express from 'express';
 import AppController from '../controllers/AppController';
 import StudentsController from '../controllers/StudentsController';
